@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's Date</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@200&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-size: 3em;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const today = new Date();
+        const formattedDate = today.toLocaleDateString('en-GB'); // Gün/Ay/Yıl formatı
+        document.body.innerText = formattedDate;
+    </script>
+</body>
+</html>
